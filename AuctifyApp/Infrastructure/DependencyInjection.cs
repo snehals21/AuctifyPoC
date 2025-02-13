@@ -18,11 +18,11 @@ namespace Infrastructure
 
             //Registered the interface with the repository.
             services.AddScoped<CategoryInterface, CategoryRepository>();
-            //services.AddScoped<IIdeaRepository, IdeaRepository>();
+            services.AddScoped<IdeaInterface, IdeaRepository>();
 
             // Registered the specific services.
             services.AddScoped<CategoryService>();
-            //services.AddScoped<IdeaService>();
+            services.AddScoped<IdeaService>();
 
             //return services;
         }
